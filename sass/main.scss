@@ -1,0 +1,232 @@
+@import "reset";
+@import "grid";
+
+//Palette color
+$color-primary: #431829;
+$color-secondary: #e1ab41;
+$color-tercieary: #e3481f;
+$color-info: #230b9e;
+$color-text-dark: #383838;
+$color-text-light: #fcf2ea;
+
+//Fonts types
+$font-titles: Helvetica, sans-serif;
+$font-text: 'Garamond', sans-serif;
+
+//Font sizes
+$font-size-small: 1.2rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 2.2rem;
+
+//Genera paddong in page
+$padding-page: 15%;
+
+//margins
+$spacing: (
+    xs: 0.25rem,
+    sm: 0.5rem,
+    md: 1rem,
+    lg: 1.5rem,
+    xl: 2rem,
+    xxl: 3rem
+);
+
+@each $name, $value in $spacing {
+    .mt-#{$name} {
+        margin-top: $value;
+    }
+    .mb-#{$name} {
+        margin-bottom: $value;
+    }
+    .ml-#{$name} {
+        margin-left: $value;
+    }
+    .mr-#{$name} {
+        margin-right: $value;
+    }
+    .m-#{$name} {
+        margin: $value;
+    }
+}
+
+//Paddings
+@each $name, $value in $spacing {
+    .pt-#{$name} {
+        padding-top: $value;
+    }
+    .pb-#{$name} {
+        padding-bottom: $value;
+    }
+    .pl-#{$name} {
+        padding-left: $value;
+    }
+    .pr-#{$name} {
+        padding-right: $value;
+    }
+    .p-#{$name} {
+        padding: $value;
+    }
+}
+
+//bg colors
+.bg-primary{
+    background-color: $color-primary;
+}
+
+.bg-primary-grad {
+    background-image: linear-gradient($color-primary,#803e54,#803f55);
+}
+
+.bg-secondary{
+    background-color: $color-secondary;
+}
+
+.bg-tercieary{
+    background-color: $color-tercieary;
+}
+
+.bg-info{
+    background-color: $color-info;
+}
+
+.bg-light{
+    background-color: $color-text-light;
+}
+
+.bg-light-gray{
+    background-color: #f7f6f7
+}
+
+//Text colors
+.text-color-light{
+    color: $color-text-light;
+}
+
+.text-color-secondary{
+    color: $color-secondary
+}
+
+.text-color-dark{
+    color: $color-primary
+}
+
+.text-color-black{
+    color: $color-text-dark
+}
+
+//Font styles
+.font-large
+{
+    font-size: $font-size-large;
+}
+
+.font-medium
+{
+    font-size: $font-size-medium;
+}
+
+.font-small
+{
+    font-size: $font-size-small;
+}
+
+.font-smallest
+{
+    font-size: 0.8rem;
+}
+
+.style-justified{
+    text-align: justify;
+}
+
+.style-left{
+    text-align: left;
+}
+
+.style-right{
+    text-align: right;
+}
+
+.style-center{
+    text-align: center;
+}
+
+//Font family
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-titles;
+}
+
+p, a, span, li, label, button{
+    font-family: $font-text;
+}
+
+//Img styles
+img {
+    width: 80%;
+    height: auto;
+}
+
+.darken-img{
+    filter: brightness(50%);
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+//Button styles
+.button-primary{
+    background-color: $color-tercieary;
+    color: $color-text-light;
+    font-size: small;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-primary:hover{
+    background-color: $color-secondary;
+}
+
+//Container styles
+.center-element{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+//Custom styles mainpage
+.custom-text-brands{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.custom-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    
+    background-color: $color-text-light;    
+
+    .wrapper{
+        //Padding side in the container
+        padding: {
+            left: $padding-page;
+            right: $padding-page;
+        }
+        
+        .img-logo{
+            padding-top: 1.5vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+        }
+        
+    }
+}

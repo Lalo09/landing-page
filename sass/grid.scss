@@ -1,0 +1,134 @@
+@mixin config-col{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height: auto;
+}
+
+@mixin config-width($width){
+    width: $width;
+}
+
+.grid-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:unset;
+    align-content:flex-start;
+    width: 100%;
+    
+    .cel-1{
+        @include config-col;
+        @include config-width(8.33%);
+    } 
+
+    .cel-2{
+        @include config-col;
+        @include config-width(16.66%);
+    }
+
+    .cel-3{
+        @include config-col;
+        @include config-width(25%);
+    } 
+
+    .cel-4{
+        @include config-col;
+        @include config-width(33.33%);
+    }
+
+    .cel-5{
+        @include config-col;
+        @include config-width(41.66%);
+    } 
+
+    .cel-6{
+        @include config-col;
+        @include config-width(50%);
+    }
+    
+    .cel-7{
+        @include config-col;
+        @include config-width(58.33%);
+    } 
+
+    .cel-8{
+        @include config-col;
+        @include config-width(66.66%);
+    }
+
+    .cel-9{
+        @include config-col;
+        @include config-width(75%);
+    } 
+
+    .cel-10{
+        @include config-col;
+        @include config-width(83.33%);
+    }
+
+    .cel-11{
+        @include config-col;
+        @include config-width(91.66%);
+    } 
+
+    .cel-12{
+        @include config-col;
+        @include config-width(100%);
+    }
+    
+}
+
+//Mediaquerie grid for mobile devices
+@media (max-width: 768px) {
+    .grid-row{
+        .cel-1{
+            @include config-width(100%);
+        } 
+
+        .cel-2{
+            @include config-width(100%);
+        }
+
+        .cel-3{
+            @include config-width(100%);
+        } 
+
+        .cel-4{
+            @include config-width(100%);
+        }
+
+        .cel-5{
+            @include config-width(100%);
+        } 
+
+        .cel-6{
+            @include config-width(100%);
+        }
+        
+        .cel-7{
+            @include config-width(100%);
+        } 
+
+        .cel-8{
+            @include config-width(100%);
+        }
+
+        .cel-9{
+            @include config-width(100%);
+        } 
+
+        .cel-10{
+            @include config-width(100%);
+        }
+
+        .cel-11{
+            @include config-width(100%);
+        } 
+
+        .cel-12{
+            @include config-width(100%);
+        }
+    }
+}

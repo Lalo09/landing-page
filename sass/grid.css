@@ -1,0 +1,132 @@
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: unset;
+  align-content: flex-start;
+  width: 100%;
+}
+.grid-row .cel-1 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 8.33%;
+}
+.grid-row .cel-2 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 16.66%;
+}
+.grid-row .cel-3 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 25%;
+}
+.grid-row .cel-4 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 33.33%;
+}
+.grid-row .cel-5 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 41.66%;
+}
+.grid-row .cel-6 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 50%;
+}
+.grid-row .cel-7 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 58.33%;
+}
+.grid-row .cel-8 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 66.66%;
+}
+.grid-row .cel-9 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 75%;
+}
+.grid-row .cel-10 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 83.33%;
+}
+.grid-row .cel-11 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 91.66%;
+}
+.grid-row .cel-12 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .grid-row .cel-1 {
+    width: 100%;
+  }
+  .grid-row .cel-2 {
+    width: 100%;
+  }
+  .grid-row .cel-3 {
+    width: 100%;
+  }
+  .grid-row .cel-4 {
+    width: 100%;
+  }
+  .grid-row .cel-5 {
+    width: 100%;
+  }
+  .grid-row .cel-6 {
+    width: 100%;
+  }
+  .grid-row .cel-7 {
+    width: 100%;
+  }
+  .grid-row .cel-8 {
+    width: 100%;
+  }
+  .grid-row .cel-9 {
+    width: 100%;
+  }
+  .grid-row .cel-10 {
+    width: 100%;
+  }
+  .grid-row .cel-11 {
+    width: 100%;
+  }
+  .grid-row .cel-12 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=grid.css.map */
